@@ -1,0 +1,13 @@
+<h1>Counter</h1>
+
+<p>So many cat pics!</p>
+
+<p>Cat count: <strong>{{ currentCount }}</strong></p>
+
+<!---
+<button (click)="incrementCounter()">Increment</button>
+-->
+
+<div (click)="incrementCounter()">
+    <img (click)="scrollImage()" alt="cute cat" src="{{images[imageIndex].src}}" class="col-md-offset-5 img-responsive img-gallery">
+</div>

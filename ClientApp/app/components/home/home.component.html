@@ -1,0 +1,11 @@
+<h1>Title: {{ title }}</h1>
+<p>Welcome to the Cat app!</p>
+
+<p>Feel free to play with this page's title</p>
+
+<input type="text" [(ngModel)]="title" value="{{ title }}" />
+
+<input type="button" (click)="deleteTitle()" value="Delete Title" />
+
+<fetchpersons></fetchpersons>
+    

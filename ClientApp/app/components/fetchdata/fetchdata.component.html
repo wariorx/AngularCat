@@ -1,0 +1,36 @@
+<h1>Cute Cat Animations</h1>
+
+<p>Enjoy Some State of the Art Cat Animations</p>
+
+<!--
+<table class='table' *ngIf="forecasts">
+
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let forecast of forecasts">
+                <td>{{ forecast.dateFormatted }}</td>
+                <td>{{ forecast.temperatureC }}</td>
+                <td>{{ forecast.temperatureF }}</td>
+                <td>{{ forecast.summary }}</td>
+            </tr>
+        </tbody>
+    </table>
+        -->
+<table class="table">
+    <thead>
+        <tr>
+            <th [routerLinkActive]="['link-active']"><a [routerLink]="['/fetch-data/fade']">Fade </a></th>
+            <th [routerLinkActive]="['link-active']"><a [routerLink]="['/fetch-data/slide']">Slide </a></th>
+        </tr>
+    </thead>
+
+</table>
+
+<router-outlet></router-outlet>
