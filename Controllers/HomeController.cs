@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using AngularCat.Models;
 
 namespace AngularCat.Controllers
 {
@@ -18,6 +19,12 @@ namespace AngularCat.Controllers
         {
             ViewData["RequestId"] = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
             return View();
+        }
+        
+        public JsonResult PersonQuery(String query)
+        {
+            JsonResult result = Json(PersonDB.getPersons(query));
+            return result;
         }
     }
 }
